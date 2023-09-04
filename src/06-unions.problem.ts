@@ -6,9 +6,9 @@ interface User {
    * Нужно сузить набор ролей до следующих:
    * - 'admin'
    * - 'user'
-   * - 'support'
+   * - 'super-admin'
    */
-  role: string;
+  role: "admin" | "user" | "support";
 }
 
 export const wrongUser: User = {
