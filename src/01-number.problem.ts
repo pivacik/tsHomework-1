@@ -1,6 +1,6 @@
 import { expect, it } from "@jest/globals";
 
-export const addTwoNumbers = (a, b) => {
+export const addTwoNumbers = (a: number, b: number) => {
   return a + b;
 };
 
