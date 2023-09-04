@@ -1,0 +1,25 @@
+name: TS Test / Units
+
+on: [pull_request, push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install project dependencies
+        run: npm install
+
+      - name: Run ts test
+        run: npm run ts-check
+
+      - name: Run unit tests
+        run: npm run unit

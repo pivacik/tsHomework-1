@@ -4,7 +4,8 @@
   "description": "Typescript Homework for ITMO Part 1",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "unit": "jest",
+    "ts-check": "tsc --noEmit"
   },
   "author": "friedbanana",
   "license": "ISC",
