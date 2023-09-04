@@ -10,7 +10,12 @@ interface User {
 /**
  * Нужно убедиться, что defaultUser типа User
  */
-const defaultUser = {};
+const defaultUser: User = {
+  id: 1,
+  firstName: "Dmitrii",
+  lastName: "Pozdniakov",
+  isAdmin: true,
+};
 
 const getUserId = (user: User) => {
   return user.id;
