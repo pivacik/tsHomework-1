@@ -1,6 +1,6 @@
 import { expect, it } from "@jest/globals";
 
-export const getName = (params: { first: string; last: string }) => {
+export const getName = (params: { first: string; last?: string }) => {
   if (params.last) {
     return `${params.first} ${params.last}`;
   }
